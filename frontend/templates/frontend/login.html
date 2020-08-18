@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <section id="login">
+            <div>
+            {% if form.errors %}
+                <span>ERROR!!!!</span>
+            {% endif %}
+                {% if next %}
+                    <form action="{% url 'login' %}?next={{next}}" method="post" >
+                {%else%}
+                    <form action="{% url 'login' %}" method="post" >
+                {% endif %}
+                    {% csrf_token %}
+                        <label for="id_username">Username:</label>
+                        <input placeholder="Username" type="text" name="username" autofocus required id="id_username"/>
+
+                        <label for="id_password">Password:</label>
+                        <input placeholder="Password" type="password" name="password" required id="id_password"/>
+
+                        <button type="submit">Login</button>
+                    </form>
+            </div>
+        </section>
+    </body>
+
+</html>
