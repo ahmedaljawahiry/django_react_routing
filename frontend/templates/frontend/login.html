@@ -14,7 +14,7 @@
             {% if form.errors %}
                 <span>ERROR!!!!</span>
             {% endif %}
-            
+
             {% if next %}
                 <form action="{% url 'login' %}?next={{next}}" method="post" >
             {%else%}

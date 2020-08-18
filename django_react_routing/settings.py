@@ -53,13 +53,13 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'django_react_routing.urls'
 
 STATICFILES_DIRS = [
-    "frontend/cra/build/static/",
+    "frontend/react/build/static/",
 ]
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['frontend/cra/build'],
+        'DIRS': ['frontend/react/build'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
