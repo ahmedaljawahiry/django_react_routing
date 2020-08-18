@@ -7,6 +7,7 @@ import {
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Nav from "./Nav";
+import FetchingPage from "./pages/FetchingPage";
 
 export default function App() {
   return <Router basename='ui'>
@@ -19,6 +20,9 @@ export default function App() {
       </Route>
       <Route path="/page-2">
         <Page2/>
+      </Route>
+      <Route path="/fetch">
+        <FetchingPage/>
       </Route>
       <Route path="/">
         <div>This is home!</div>
