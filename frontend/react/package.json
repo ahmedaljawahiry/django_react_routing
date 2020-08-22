@@ -2,7 +2,7 @@
   "name": "React",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
+  "proxy": "http://django:8000",
   "dependencies": {
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",

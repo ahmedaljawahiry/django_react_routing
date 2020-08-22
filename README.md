@@ -9,7 +9,6 @@
 - Login page created using Django.
     - Traditional template rendered server-side.
 - APIs use SessionAuthentication.
-    - What about token-based auth, going forward?
 - Requests made from frontend by specifying a path only (not a full url, with a token in a header).
 - Dockerised.
 - Frontend & backend served from same domain.
