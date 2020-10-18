@@ -18,7 +18,7 @@ export default function FetchingPage() {
     }, [])
 
     return <div>
-        <div>This fetches data from two APIs!</div><br/>
+        <h1>This is a React route that fetches data!</h1>
         Data from unauthenticated API: {JSON.stringify(noAuthData)}<br/>
         Data from authenticated API: {JSON.stringify(authData)}
     </div>;

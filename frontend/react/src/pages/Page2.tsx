@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Page2() {
-    return <div>This is page 2!</div>;
+    return <h1>This is another React route</h1>;
 }

@@ -5,13 +5,18 @@ from django.shortcuts import render
 
 @login_required()
 def index(request, *args):
-	return render(request, 'index.html')
+    return render(request, 'index.html')
 
 
 class Login(LoginView):
-	template_name = 'frontend/login.html'
-	redirect_authenticated_user = True
+    template_name = 'frontend/login.html'
+    redirect_authenticated_user = True
 
 
 class Logout(LogoutView):
-	pass
+    pass
+
+
+@login_required()
+def server_page(request, *args):
+    return render(request, 'frontend/server.html')

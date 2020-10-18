@@ -25,6 +25,7 @@ export default function App() {
         <FetchingPage/>
       </Route>
       <Route path="/">
+        <h1>React App Home</h1>
         <div>This is home!</div>
       </Route>
     </Switch>

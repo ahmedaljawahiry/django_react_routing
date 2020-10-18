@@ -10,7 +10,8 @@ export default function Nav() {
             <li><Link to="/page-1/sub-page">Sub Page 1</Link></li>
             <li><Link to="/page-2">Page 2</Link></li>
             <li><Link to="/fetch">Fetching Page</Link></li>
-            <li><a href='http://localhost:8000/server/logout'>Logout</a></li>
+            <li><a href='http://localhost:8000/server/page'>Server-rendered template</a></li>
+            <li><a href='http://localhost:8000/user/logout'>Logout</a></li>
         </ul>
     </nav>
 }

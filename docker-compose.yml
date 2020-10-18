@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   django:
-    image: ahmed1293/django_react_routing/django:latest
+    image: django_react_routing/django:latest
     build:
       context: .
       dockerfile: docker/django/Dockerfile
@@ -16,7 +16,7 @@ services:
       - "8000:8000"
 
   react:
-    image: ahmed1293/django_react_routing/react:latest
+    image: django_react_routing/react:latest
     build:
       context: frontend/react
       dockerfile: ../../docker/react/Dockerfile

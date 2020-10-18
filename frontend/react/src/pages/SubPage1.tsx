@@ -2,5 +2,5 @@ import React from "react";
 
 
 export default function SubPage1() {
-    return <div>This is sub page 1!</div>
+    return <h1>This is a nested React route</h1>
 }

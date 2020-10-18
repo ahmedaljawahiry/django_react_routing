@@ -125,6 +125,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_URL = '/server/login'
+LOGIN_URL = '/user/login'
 LOGIN_REDIRECT_URL = '/ui/'
-LOGOUT_REDIRECT_URL = '/server/login'
+LOGOUT_REDIRECT_URL = '/user/login'

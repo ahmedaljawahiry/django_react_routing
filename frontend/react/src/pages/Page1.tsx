@@ -7,7 +7,7 @@ export default function Page1() {
     let match = useRouteMatch();
 
     return <div>
-        <div>This is page 1!</div>
+        <h1>This is a React route</h1>
 
         <Switch>
             <Route path={`${match.path}/sub-page`}>
